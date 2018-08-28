@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>kShade</title>
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="jshade.css">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <!-- <script src="jshint.js"></script> -->
+    <script src="boxys.js"></script>
+    <script src="kShade.js"></script>
+    <script src="jquery.min.js"></script>
+  </head>
+  <body>
+      <!-- <div id="info" class="boxy" title="FPS">
+        <span id="fps"></span>
+      </div> -->
+    <div class="container">
+      <iframe class="back" src="backgl.html?background.glsl"></iframe>
+
+      <iframe id="code" class="boxy" title="Code" src="code.html">
+      </iframe>
+      <div id="render" class="boxy" title="Render">
+        <div id="error">
+        </div>
+        <iframe class="webgl" id="shader" src="webgl.html?menu.c"></iframe>
+      </div>
+      <div id="params" class="boxy" title="Parameters">
+        <div class="uniform">
+          <div class="uniform_label name big">Parameter</div>
+          <input type="number" class="value hi" value="2">
+          <input type="number" class="value lo" value="0">
+          <input type="range" class="slider x" value="0">
+          <input type="range" class="slider y" value="0">
+          <input type="range" class="slider z" value="0">
+          <input type="range" class="slider w" value="0">
+          <div class="uniform_label type">float</div>
+          <input type="number" class="value big w" value="0">
+          <input type="number" class="value big z" value="0">
+          <input type="number" class="value big y" value="0">
+          <input type="number" class="value big x" value="0">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

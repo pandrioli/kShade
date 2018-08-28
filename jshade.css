@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-size: 10px;
+  font-family: monospace;
+  background-color: gray;
+  margin: 1vw;
+}
+
+input {
+  border: 0;
+  margin-left: 3px;
+}
+
+iframe {
+  border: 0;
+}
+
+[id^="boxy-"] {
+  border-radius: 10px;
+  transform-origin: top;
+}
+
+[id^="boxy-"] > * {
+  opacity: .8;
+}
+
+
+.boxy-top-bar {
+  position: relative;
+  background-color: red;
+}
+.boxy-bottom-bar {
+  position: relative;
+  clear: both;
+  background-color: gray;
+}
+.boxy-title, .boxy-status {
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  font-size: 17px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.boxy-icon {
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  font-size: 20px;
+  color: lightgray;
+}
+
+.back {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  pointer-events: none;
+}
+
+
+#info {
+  position: relative;
+  float: left;
+  font-size: 5em;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  color: white;
+  background-color: black;
+  margin: 10px;
+}
+
+#render {
+  position: relative;
+  float: left;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: rgba(255,255,255,.2);
+  opacity: 1!important;
+}
+
+#code {
+  position: relative;
+  float: left;
+  width: 800px;
+  height: 500px;
+  background-color: lightgray;
+  margin: 10px;
+}
+
+#params {
+  position: relative;
+  float: left;
+  width: 500px;
+  height: 700px;
+  background-color: lightgray;
+  margin: 10px;
+  overflow-y: scroll;
+}
+
+.uniform {
+  padding: 20px 10px;
+  border-bottom: 2px solid gray;
+  overflow: auto;
+}
+.uniform_label {
+  float: left;
+  margin-left: 10px;
+  height: 20px;
+  line-height: 20px;
+
+  vertical-align: middle;
+}
+
+.value {
+  float: right;
+  text-align: right;
+  width: 80px;
+  height: 20px;
+}
+
+.lo,.hi {
+  background-color: gray;
+  color: white;
+}
+
+.big {
+  font-size: 1.5em;
+}
+
+.slider {
+  width: 99%;
+}
+
+
+#error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.webgl {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+#error span {
+  font-size: 2em;
+}
+
+.errorLine {
+  text-align: center;
+  background-color: white;
+  color: black;
+  float: left;
+  width: 5%;
+  margin-right: 2%;
+}
+.errorMessage {
+  float: left;
+  width: 93%;
+  margin-bottom: 10px;
+}
